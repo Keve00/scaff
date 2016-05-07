@@ -1,0 +1,127 @@
+@charset="UTF-8";
+@font-face{
+	font-family: 'Myraid';
+	src: url("../fonts/MyriadPro-Regular.otf");
+}
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+body{
+	font-size: 62.5%;
+	font-family: Myraid;
+	background: #03CDD6;
+}
+.page{
+	width: 100%;
+	background: #fff;
+	margin: auto;
+}
+.form{
+	height: 470px !important;
+}
+.form{
+	width: 400px;
+	height: 400px;
+	background: #fff;
+	margin: auto;
+	box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.1), 0px 24px 38px -16px rgba(0, 0, 0, 0.2);
+}
+.alert{
+  width: 200px;
+  height: 30px;
+  border-radius: 3px;
+  margin: auto;
+  padding-top: 12px;
+  text-align: center;
+  font-size: 1.4em;
+  color: #fff;
+  background: #F75959;
+}
+.success{
+  width: 200px;
+  height: 30px;
+  border-radius: 3px;
+  margin: auto;
+  padding-top: 12px;
+  text-align: center;
+  font-size: 1.4em;
+  color: #fff;
+  background: #4FF190;
+}
+.fields{
+  color: #03CDD6;
+  font-size: 1.6em;
+  padding: 15px 0px 15px 0px;
+  display: block;
+  outline: none;
+  border: none;
+  width: 266px;
+  border-bottom: 1px solid #d2d2d2; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.bar{
+      position: relative;
+      display: block;
+      width: 266px;
+    }
+    .bar:before, .bar:after{
+      content: "";
+      height: 2px;
+      width: 0;
+      bottom: -1px;
+      position: absolute;
+      background: #03CDD6;
+      -webkit-transition: 0.2s ease all;
+      -o-transition: 0.2s ease all;
+      transition: 0.2s ease all;
+    }
+    .bar:before { left: 50%;}
+    .bar:after { right: 50%;}
+
+/*input:valid{
+      border-bottom: 1px solid #4fc24f;
+    }
+    
+    input:valid ~ .bar:before,
+    input:valid ~ .bar:after{
+      background-color: #4fc24f !important;
+    }
+*/
+input:focus ~ label,
+    input.used ~ label{
+      top: -20px;
+      font-size: 13px;
+      color: #03CDD6;
+    }
+
+    /*input:valid ~ label,
+    input:valid.used ~ label{
+      color: #4fc24f;
+    }
+*/
+    input:focus ~ .bar:before,
+    input:focus ~ .bar:after{
+      width: 50%;
+    }
+.form label{
+      color: #d2d2d2;
+      font-size: 2.0em;
+      font-weight: normal;
+      font-family: sans-serif;
+      position: absolute;
+      pointer-events: none;
+      top: 10px;
+      -webkit-transition: 0.2s ease all;
+      -o-transition: 0.2s ease all;
+      transition: 0.2s ease all;
+    }
+.legend{
+	margin-left: 20px;
+	font-size: 2.0em;
+	color: #d2d2d2;
+}
+

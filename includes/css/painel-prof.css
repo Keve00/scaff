@@ -1,0 +1,14 @@
+@charset="UTF-8";
+@font-face{
+	font-family: 'Myraid';
+	src: url("../fonts/MyriadPro-Regular.otf");
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+}
+body{
+	font-size: 62.5%;
+	font-family: Myraid;
+}
